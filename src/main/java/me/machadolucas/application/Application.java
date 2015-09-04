@@ -1,9 +1,9 @@
-package me.machadolucas.timesheet;
+package me.machadolucas.application;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
-import me.machadolucas.timesheet.bean.JSFSpringBean;
+import me.machadolucas.application.bean.JSFSpringBean;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,10 +13,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 @SpringBootApplication
-public class TimesheetApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(TimesheetApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
     @Bean

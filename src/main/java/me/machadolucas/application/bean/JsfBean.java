@@ -1,4 +1,4 @@
-package me.machadolucas.timesheet.bean;
+package me.machadolucas.application.bean;
 
 import javax.annotation.ManagedBean;
 import javax.faces.bean.RequestScoped;

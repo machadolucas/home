@@ -1,4 +1,4 @@
-package me.machadolucas.timesheet;
+package me.machadolucas.application;
 
 import java.util.HashSet;
 import java.util.Set;
