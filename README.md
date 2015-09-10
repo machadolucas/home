@@ -1,4 +1,4 @@
-# springboot-primefaces
+# home2
 
 Before we can start building the application, we need to have an OpenShift free account and client tools installed.
 
@@ -20,7 +20,7 @@ Commit the changes:
 
 ## Step 3: Pull Source code from GitHub
 
-    git remote add upstream https://github.com/machadolucas/springboot-primefaces.git
+    git remote add upstream https://github.com/machadolucas/home2.git
     git pull -s recursive -X theirs upstream master
 
 ## Step 4: Push changes

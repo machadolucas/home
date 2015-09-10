@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lucas Machado</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Personal webpage of Lucas Machado."/>
+
+    <link rel="icon" type="image/ico" th:href="@{img/favicon.ico}" href="../static/img/favicon.ico"/>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css"/>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"/>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"/>
+
+    <link rel="stylesheet" th:href="@{/webjars/font-awesome/4.4.0/css/font-awesome.min.css}"
+          href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" type="text/css" th:href="@{css/style.css}" href="../static/css/style.css" media="all"/>
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+    <script type="text/javascript">
+        var server = "me.com";
+        var address = "machadolucas@" + server;
+        function writemail() {
+            document.write(address);
+        }
+
+        jQuery(document).ready(function() {
+            jQuery('#loading').fadeOut(500, function() {
+
+                if(window.location.hash == ''){
+                    window.location.hash = '#home';
+                }
+                changePageHash(window.location.hash);
+            });
+        });
+        function changePage(link) {
+            changePageHash(link.hash);
+        }
+
+        function changePageHash(anchor) {
+            switch (anchor){
+                case "#contact":
+                case "#home":
+                    changeContainer('pages/home.html', anchor);
+                    break;
+                case "#professional":
+                    changeContainer('pages/professional.html', anchor);
+                    break;
+                case "#portfolio":
+                    changeContainer('pages/portfolio.html', anchor);
+                    break;
+                case "#timeline":
+                    changeContainer('pages/timeline.html', anchor);
+                    break;
+                case "#photography":
+                    changeContainer('pages/photography.html', anchor);
+                    break;
+                default:
+                    changeContainer('pages/home.html', anchor);
+                    break;
+            }
+        }
+        function changeContainer(address, anchor){
+            changeContainer(address, anchor, function(){});
+        }
+        function changeContainer(address, anchor, callback){
+            var stateObj = { foo: "bar" };
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+            jQuery('.landing').removeClass('blurred');
+            jQuery('.content-wrapper, .footer').fadeOut('normal',function(){
+                jQuery('.content-loader').load(address, function(){
+                    jQuery('.home-menu li').removeClass('pure-menu-selected');
+                    jQuery('.home-menu a[href="' + anchor + '"]').parent().addClass('pure-menu-selected');
+                    jQuery('.content-wrapper, .footer').fadeIn('slow', callback);
+                    jQuery('.landing').addClass('blurred');
+                });
+            });
+            history.replaceState(stateObj, address, anchor);
+        }
+    </script>
+
+    <meta property="og:site_name" content="machadolucas"/>
+    <meta property="og:image"
+          content="../static/img/site_logo.jpg" th:content="@{img/site_logo.jpg}"/>
+    <meta property="og:title" content="Lucas Machado"/>
+    <meta property="og:type" content="website"/>
+
+</head>
+<body>
+    <div id="loading" class="unselectable flexContainerVertical">
+        <h3 th:text="#{message_loading}"></h3>
+        <img th:src="@{img/loading.gif}" src="../static/img/loading.gif" />
+    </div>
+
+
+    <div class="header">
+        <div
+                class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-scrollable pure-menu-fixed">
+            <a class="pure-menu-heading" href="" th:text="#{menu_title}"></a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-selected"><a href="#home" onclick="changePage(this)" th:text="#{menu_home}"></a></li>
+                <li class="pure-menu-item"><a href="#professional" onclick="changePage(this)" th:text="#{menu_professional}"></a></li>
+                <li class="pure-menu-item"><a href="#portfolio" onclick="changePage(this)" th:text="#{menu_portfolio}"></a></li>
+                <li class="pure-menu-item"><a href="#timeline" onclick="changePage(this)" th:text="#{menu_timeline}"></a></li>
+                <li class="pure-menu-item"><a href="#photography" onclick="changePage(this)" th:text="#{menu_photography}"></a></li>
+                <li class="pure-menu-item"><a href="http://blog.machadolucas.me" target="_blank" th:text="#{menu_blog}"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="landing" th:style="|background-image:url('${randomBackground}')|">
+    </div>
+
+    <div class="content-wrapper">
+
+        <div class="content-loader">
+        </div>
+
+        <div class="footer l-box pure-g" id="contact">
+            <div class="pure-u-1 pure-u-sm-1-2">
+                <h2 class="footer-head" th:text="#{title_contact}"></h2>
+                <h3 class="footer-email"><script>writemail();</script></h3>
+            </div>
+            <div class="pure-u-1 pure-u-sm-1-2">
+                <ul class="pure-g">
+                    <li class="pure-u-1 pure-u-md-1-2 pure-u-xl-1-3">
+                        <a class="mail" href="#" th:title="#{tooltip_email}"><i class="fa fa-envelope"></i><span th:text="#{label_email}"></span></a>
+                    </li>
+                    <li class="pure-u-1 pure-u-md-1-2 pure-u-xl-1-3">
+                        <a href="skype:machado_lucas?chat" th:title="#{tooltip_skype}"><i class="fa fa-skype"></i><span th:text="#{label_skype}"></span></a>
+                    </li>
+                    <li class="pure-u-1 pure-u-md-1-2 pure-u-xl-1-3">
+                        <a href="http://www.facebook.com/sir.lucas.machado" target="_blank" th:title="#{tooltip_facebook}"><i class="fa fa-facebook"></i><span th:text="#{label_facebook}"></span></a>
+                    </li>
+                    <li class="pure-u-1 pure-u-md-1-2 pure-u-xl-1-3">
+                        <a href="http://twitter.com/sir_luke" target="_blank" th:title="#{tooltip_twitter}"><i class="fa fa-twitter"></i><span th:text="#{label_twitter}"></span></a>
+                    </li>
+                    <li class="pure-u-1 pure-u-md-1-2 pure-u-xl-1-3">
+                        <a href="http://github.com/machadolucas" target="_blank" th:title="#{tooltip_github}"><i class="fa fa-github"></i><span th:text="#{label_github}"></span></a>
+                    </li>
+                    <li class="pure-u-1 pure-u-md-1-2 pure-u-xl-1-3">
+                        <a href="http://br.linkedin.com/in/machadolucas" target="_blank" th:title="#{tooltip_linkedin}"><i class="fa fa-linkedin"></i><span th:text="#{label_linkedin}"></span></a>
+                    </li>
+                    <li class="pure-u-1 pure-u-md-1-2 pure-u-xl-1-3">
+                        <a href="http://www.slideshare.net/sirlucasmachado" target="_blank" th:title="#{tooltip_slideshare}"><i class="fa fa-slideshare"></i><span th:text="#{label_slideshare}"></span></a>
+                    </li>
+                    <li class="pure-u-1 pure-u-md-1-2 pure-u-xl-1-3">
+                        <a href="http://steamcommunity.com/id/sirlukestradwoski" target="_blank" th:title="#{tooltip_steam}"><i class="fa fa-steam"></i><span th:text="#{label_steam}"></span></a>
+                    </li>
+                    <li class="pure-u-1 pure-u-md-1-2 pure-u-xl-1-3">
+                        <a href="http://0-sirluke-0.deviantart.com/" target="_blank" th:title="#{tooltip_deviantart}"><i class="fa fa-deviantart"></i><span th:text="#{label_deviantart}"></span></a>
+                    </li>
+                    <li class="pure-u-1 pure-u-md-1-2 pure-u-xl-1-3">
+                        <a href="http://www.lastfm.com.br/user/sirlucasmachado" target="_blank" th:title="#{tooltip_lastfm}"><i class="fa fa-lastfm"></i><span th:text="#{label_lastfm}"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script',
+                '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-41237689-1', 'machadolucas.me');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+</html>

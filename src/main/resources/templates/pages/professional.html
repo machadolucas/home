@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+
+    <div class="content">
+        <div class="l-box-lrg">
+            <h1 class="content-head is-center" th:text="#{menu_professional}"></h1>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg">
+        <div class="l-box-lrg">
+            <h2 class="content-head content-head-ribbon" th:text="#{title_objective}"></h2>
+
+            <p>
+                <strong th:text="#{text_objective}"></strong>
+            </p>
+        </div>
+    </div>
+    <div class="l-box-lrg ribbonLight">
+
+        <h2 class="content-head content-head-ribbon is-center" th:text="#{title_experience}"></h2>
+
+        <div class="l-box-lrg">
+            <div class="l-box-lrg roundedBox">
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-sm-1-4 logoBlock">
+                        <a href="http://sobreuol.noticias.uol.com.br" target="_blank"
+                           th:alt-title="#{tooltip_link_uol}"> <img
+                                class="pure-img-responsive" th:src="@{img/uol_logo.png}"
+                                width="210px"/>
+
+                            <h3 th:text="#{title_uol}"></h3>
+                        </a>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-3-4 ">
+                        <p>
+                            <strong th:text="#{text_uol}"></strong>
+                        </p>
+
+                        <h3 th:text="#{title_job_uol}"></h3>
+
+                        <p><a href="https://pagseguro.uol.com.br" target="_blank" th:text="#{text_job_uol}"></a></p>
+                    </div>
+                </div>
+
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-sm-1-4 logoBlock">
+                        <a href="http://www.culturedude.com/about-culturedude/" target="_blank"
+                           th:alt-title="#{tooltip_link_culturedude}"> <img
+                                class="pure-img-responsive" th:src="@{img/svg/culturedude.svg}"
+                                width="210px"/>
+
+                            <h3 th:text="#{title_culturedude}"></h3>
+                        </a>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-3-4 ">
+                        <p>
+                            <strong th:text="#{text_culturedude}"></strong>
+                        </p>
+
+                        <h3 th:text="#{title_job_culturedude}"></h3>
+
+                        <p th:text="#{text_job_culturedude}"></p>
+                    </div>
+                </div>
+
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-sm-1-4 logoBlock">
+                        <a href="http://tampere.demola.net" target="_blank"
+                           th:alt-title="#{tooltip_link_demola}"> <img
+                                class="pure-img-responsive" th:src="@{img/svg/demola.svg}"
+                                width="210px"/>
+
+                            <h3 th:text="#{title_demola}"></h3>
+                        </a>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-3-4 ">
+                        <p>
+                            <strong th:text="#{text_demola}"></strong>
+                        </p>
+
+                        <h3 th:text="#{title_job_demola}"></h3>
+
+                        <p><a href="http://tampere.demola.net/projects/pilviväylä" target="_blank" th:text="#{text_job_demola}"></a></p>
+
+                        <h3 th:text="#{title_job_demola2}"></h3>
+
+                        <p><a href="http://tampere.demola.net/projects/watch-out-dangerous" target="_blank" th:text="#{text_job_demola2}"></a></p>
+                    </div>
+                </div>
+
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-sm-1-4 logoBlock">
+                        <a href="http://evaltec.com.br/index.php/e-val-tecnologia-english"
+                           target="_blank"
+                           th:alt-title="#{tooltip_link_eval}"> <img
+                                class="pure-img-responsive" th:src="@{img/svg/evaltec.svg}"
+                                width="210px"/>
+
+                            <h3 th:text="#{title_eval}"></h3>
+                        </a>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-3-4 ">
+                        <p>
+                            <strong th:text="#{text_eval}"></strong>
+                        </p>
+
+                        <h3 th:text="#{title_job_eval}"></h3>
+
+                        <p th:text="#{text_job_eval}"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="content-head content-head-ribbon is-center" th:text="#{title_education}"></h2>
+
+        <div class="l-box-lrg">
+            <div class="l-box-lrg roundedBox">
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-sm-1-4 logoBlock">
+                        <a href="http://www5.usp.br/english/?lang=en" target="_blank"
+                           th:alt-title="#{tooltip_link_usp}"> <img
+                                class="pure-img-responsive" th:src="@{img/usp_logo.jpg}"
+                                width="150px"/>
+
+                            <h3 th:text="#{title_usp}"></h3>
+                        </a>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-3-4 ">
+                        <p>
+                            <strong th:text="#{subtitle_usp}"></strong>
+                        </p>
+
+                        <p th:text="#{text_usp}"></p>
+
+                        <h3 th:text="#{title_project_usp1}"></h3>
+
+                        <p th:text="#{text_project_usp1}"></p>
+
+                        <h3 th:text="#{title_project_usp2}"></h3>
+
+                        <p th:text="#{text_project_usp2}"></p>
+                    </div>
+                </div>
+
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-sm-1-4 logoBlock">
+                        <a href="http://www.uta.fi" target="_blank"
+                           th:alt-title="#{tooltip_link_uta}"> <img
+                                class="pure-img-responsive" th:src="@{img/uta_logo.png}"
+                                width="150px"/>
+
+                            <h3 th:text="#{title_uta}"></h3>
+                        </a>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-3-4 ">
+                        <p>
+                            <strong th:text="#{subtitle_uta}"></strong>
+                        </p>
+
+                        <p th:text="#{text_uta1}"></p>
+                        <p th:text="#{text_uta2}"></p>
+                    </div>
+                </div>
+
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-sm-1-4 logoBlock">
+                        <a href="http://juarezwanderley.com.br/quem-somos.php"
+                           target="_blank" th:alt-title="#{tooltip_link_cejw}"> <img
+                                class="pure-img-responsive" th:src="@{img/cejw_logo.png}"
+                                width="150px"/>
+
+                            <h3 th:text="#{text_cejw}"></h3>
+                        </a>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-3-4 ">
+                        <p>
+                            <strong th:text="#{subtitle_cejw}"></strong>
+                        </p>
+
+                        <h3 th:text="#{title_project_cejw1}"></h3>
+
+                        <p th:text="#{text_project_cejw1}"></p>
+
+                        <h3 th:text="#{title_project_cejw2}"></h3>
+
+                        <p th:text="#{text_project_cejw2}"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="ribbon l-box-lrg">
+        <div class="l-box-lrg">
+
+            <h2 class="content-head content-head-ribbon pure-u-1 is-center" th:text="#{title_skills}"></h2>
+
+            <h3 class="content-head-ribbon pure-u-1" th:text="#{title_spoken_languages}"></h3>
+            <ul class="skill-list flexContainer">
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/portuguese.png}')|"></div>
+                    <p>
+                        <span th:text="#{language_portuguese}"></span><br/><span th:text="#{language_level_native}"></span>
+                    </p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/english.png}')|"></div>
+                    <p>
+                        <span th:text="#{language_english}"></span><br/><span th:text="#{language_level_fluent}"></span>
+                    </p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/finnish.png}')|"></div>
+                    <p>
+                        <span th:text="#{language_finnish}"></span><br/><span th:text="#{language_level_basic}"></span>
+                    </p></li>
+                <!--<li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/spanish.png}')|"></div>
+                    <p>
+                        <span th:text="#{language_spanish}"></span><br/><span th:text="#{language_level_basic}"></span>
+                    </p></li>-->
+                <!-- 				<li><div -->
+                <!-- 						th:style="|background-image:url('@{img/professional/german.png}')|"></div> -->
+                <!-- 					<p> -->
+                <!-- 						#{language_german}<br / th:text="#{language_level_basic}"> -->
+                <!-- 					</p></li> -->
+            </ul>
+
+            <h3 class="content-head-ribbon pure-u-1" th:text="#{title_development_languages}"></h3>
+            <ul class="skill-list flexContainer">
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/java.png}')|"></div>
+                    <p>Java</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/python.png}')|"></div>
+                    <p>Python</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/sql.png}')|"></div>
+                    <p>SQL</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/nosql.png}')|"></div>
+                    <p>noSQL</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/xml.png}')|"></div>
+                    <p>XML</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/json.png}')|"></div>
+                    <p>JSON</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/html5.png}')|"></div>
+                    <p>HTML5</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/css3.png}')|"></div>
+                    <p>CSS3</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/javascript.png}')|"></div>
+                    <p>JavaScript</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/sass.png}')|"></div>
+                    <p>SASS</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/less.png}')|"></div>
+                    <p>LESS</p></li>
+            </ul>
+
+            <h3 class="content-head-ribbon pure-u-1" th:text="#{title_other_development_technologies}"></h3>
+            <ul class="skill-list flexContainer">
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/terminal.png}')|"></div>
+                    <p>Bash</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/eclipse.png}')|"></div>
+                    <p>Eclipse</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/idea.png}')|"></div>
+                    <p>IntelliJ Idea</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/jsp.png}')|"></div>
+                    <p>JSP</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/struts.gif}')|"></div>
+                    <p>Struts</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/struts2.png}')|"></div>
+                    <p>Struts2</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/jsf.png}')|"></div>
+                    <p>JSF</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/primefaces.png}')|"></div>
+                    <p>Primefaces</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/junit.gif}')|"></div>
+                    <p>JUnit</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/selenium.png}')|"></div>
+                    <p>Selenium</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/spring.png}')|"></div>
+                    <p>Spring</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/hibernate.png}')|"></div>
+                    <p>Hibernate</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/django.png}')|"></div>
+                    <p>Django</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/drupal.png}')|"></div>
+                    <p>Drupal</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/oauth.png}')|"></div>
+                    <p>OAuth</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/biometrics.png}')|"></div>
+                    <p>Biometrics</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/jquery.png}')|"></div>
+                    <p>jQuery</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/jqueryui.png}')|"></div>
+                    <p>jQuery UI</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/d3js.svg}')|"></div>
+                    <p>D3js</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/raphael.png}')|"></div>
+                    <p>RaphaëlJs</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/processing.png}')|"></div>
+                    <p>Processing</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/compass.png}')|"></div>
+                    <p>Compass</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/bower.png}')|"></div>
+                    <p>Bower</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/grunt.png}')|"></div>
+                    <p>Grunt</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/yeoman.png}')|"></div>
+                    <p>Yeoman</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/vagrant.png}')|"></div>
+                    <p>Vagrant</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/maven.png}')|"></div>
+                    <p>Maven</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/gmaps.png}')|"></div>
+                    <p>Google Maps API</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/xcode.png}')|"></div>
+                    <p>iOS Development</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/djangorest.png}')|"></div>
+                    <p>Django REST framework</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/jetty.png}')|"></div>
+                    <p>Jetty</p></li>
+                <li>
+                    <div
+                            th:style="|background-image:url('@{img/professional/scrum.png}')|"></div>
+                    <p>Scrum</p></li>
+            </ul>
+
+            <h3 class="content-head-ribbon pure-u-1" th:text="#{title_other_skills}"></h3>
+            <ul class="skill-list flexContainer">
+                <li><p th:text="#{item_apis_designing}"></p></li>
+                <li><p th:text="#{item_requirements_engineering}"></p></li>
+                <li><p th:text="#{item_usability_evaluation}"></p></li>
+                <li><p th:text="#{item_information_visualization}"></p></li>
+                <li><p th:text="#{item_game_design}"></p></li>
+                <li><p th:text="#{item_web_accessibility}"></p></li>
+                <li><p th:text="#{item_others}">...</p></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="l-box-lrg">
+            <div class="pure-g cvBlock">
+                <div class="pure-u-1 pure-u-sm-1-2 textBlock">
+                    <h2 class="content-head pure-u-1" th:text="#{title_other_curriculum_formats}"></h2>
+
+                    <p th:text="#{text_other_cv_1}"></p>
+
+                    <p th:text="#{text_other_cv_2}"></p>
+
+                    <p th:text="#{text_other_cv_3}"></p>
+                </div>
+
+                <div class="pure-u-1 pure-u-sm-1-4 imgBlock">
+                    <a href="resources/files/CV.pdf" target="_blank" class="cv-link"
+                       th:alt-title="#{tooltip_link_cv_en}">
+                        <img th:src="@{img/cv_en.png}" class="pure-img-responsive"
+                             width="300px"/><br/><span th:text="#{in_english}"></span>
+                    </a>
+                </div>
+
+                <div class="pure-u-1 pure-u-sm-1-4 imgBlock">
+                    <a href="resources/files/CV-ptbr.pdf" target="_blank"
+                       class="cv-link"
+                       th:alt-title="#{tooltip_link_cv_pt}">
+                        <img th:src="@{img/cv_pt-br.png}" class="pure-img-responsive"
+                             width="300px"/><br/><span th:text="#{in_portuguese}"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,138 @@
+@import "compass";
+
+@import
+	url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import
+	url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+
+/*
+https://kuler.adobe.com/Gothic-color-theme-245087/
+*/
+
+$gray1: #161617;
+$gray2: #3D393B;
+$red1: #2B0002;
+$red2: #670007;
+$fontColor: #333333;
+
+
+::-moz-selection {
+	background: $red2;
+	color: #fff;
+}
+::selection {
+	background: $red2;
+	color: #fff;
+}
+
+.unselectable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	background: white;
+}
+
+body {
+	font-family: Ubuntu;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	color: $fontColor;
+}
+
+.flexWrap {
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.flexContainer {
+	display: -webkit-flex;
+	display: flex;
+}
+.flexContainerVertical {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+   -moz-box-orient: vertical;
+   -ms-flex-direction: column;
+	-webkit-flex-direction: column;
+   flex-direction: column;
+}
+.flexItem{
+	-webkit-flex: 1;
+	flex: 1;
+}
+.flexItem2{
+	-webkit-flex: 2;
+	flex: 2;
+}
+.flexItem3{
+	-webkit-flex: 3;
+	flex: 3;
+}
+.flexItem4{
+	-webkit-flex: 4;
+	flex: 4;
+}
+
+.ui-widget{
+	font-family: Ubuntu;
+	color: $fontColor;
+}
+
+h1 {
+	font-size: 96px;
+	@media screen and (max-width: 800px) {
+		font-size: 48px;
+	}
+}
+
+h2 {
+	font-size: 36px;
+	@media screen and (max-width: 800px) {
+		font-size: 28px;
+	}
+}
+
+h3 {
+	font-size: 26px;
+	@media screen and (max-width: 800px) {
+		font-size: 22px;
+	}
+}
+
+h4 {
+	font-size: 24px;
+	@media screen and (max-width: 800px) {
+		font-size: 20px;
+	}
+}
+
+h5 {
+	font-size: 22px;
+	@media screen and (max-width: 800px) {
+		font-size: 18px;
+	}
+}
+
+h6 {
+	font-size: 20px;
+	@media screen and (max-width: 800px) {
+		font-size: 16px;
+	}
+}
+
+p {
+	font-size: 18px;
+	@media screen and (max-width: 800px) {
+		font-size: 14px;
+	}
+}
