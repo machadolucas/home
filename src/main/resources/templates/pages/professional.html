@@ -443,7 +443,7 @@
                 </div>
 
                 <div class="pure-u-1 pure-u-sm-1-4 imgBlock">
-                    <a href="resources/files/CV.pdf" target="_blank" class="cv-link"
+                    <a th:href="@{files/CV.pdf}" target="_blank" class="cv-link"
                        th:alt-title="#{tooltip_link_cv_en}">
                         <img th:src="@{img/cv_en.png}" class="pure-img-responsive"
                              width="300px"/><br/><span th:text="#{in_english}"></span>
@@ -451,7 +451,7 @@
                 </div>
 
                 <div class="pure-u-1 pure-u-sm-1-4 imgBlock">
-                    <a href="resources/files/CV-ptbr.pdf" target="_blank"
+                    <a th:href="@{files/CV-ptbr.pdf}" target="_blank"
                        class="cv-link"
                        th:alt-title="#{tooltip_link_cv_pt}">
                         <img th:src="@{img/cv_pt-br.png}" class="pure-img-responsive"
