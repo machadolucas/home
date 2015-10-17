@@ -20,6 +20,8 @@
     <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
             th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
 
+    <script th:src="@{/js/responsiveslides.min.js}"></script>
+
     <script type="text/javascript">
         var server = "me.com";
         var address = "machadolucas@" + server;
@@ -107,7 +109,7 @@
                 <li class="pure-menu-item"><a href="#portfolio" onclick="changePage(this)" th:text="#{menu_portfolio}"></a></li>
                 <li class="pure-menu-item"><a href="#timeline" onclick="changePage(this)" th:text="#{menu_timeline}"></a></li>
                 <li class="pure-menu-item"><a href="#photography" onclick="changePage(this)" th:text="#{menu_photography}"></a></li>
-                <li class="pure-menu-item"><a href="http://blog.machadolucas.me" target="_blank" th:text="#{menu_blog}"></a></li>
+                <!--<li class="pure-menu-item"><a href="http://blog.machadolucas.me" target="_blank" th:text="#{menu_blog}"></a></li>-->
             </ul>
         </div>
     </div>

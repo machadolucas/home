@@ -47,6 +47,7 @@ crashlytics-build.properties
 
 *.class
 target/
+.sass-cache
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

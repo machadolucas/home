@@ -1,7 +1,6 @@
 package me.machadolucas.home.controller;
 
 import me.machadolucas.home.util.BackgroundImageUtils;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,6 +22,10 @@ public class MainController {
 
     @RequestMapping("/pages/{page}.html")
     public String pages(@PathVariable("page") String page, Model model) {
+
+        if ("photography".equals(page)) {
+            model.addAttribute("photosUrls", backgroundImageUtils.getPhotos());
+        }
 
         return "pages/" + page;
     }
