@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Memória Curta</title>
+
+    <style th:inline="text">
+        html {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            user-select: none;
+            -webkit-font-smoothing: antialiased;
+            background-color: black;
+            color: white;
+            font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+        }
+
+        body {
+            padding: 5%;
+        }
+
+        h1 {
+            font-size: 8em;
+        }
+
+        p {
+            font-size: 1.4em;
+        }
+
+        @-webkit-keyframes back-moving {
+            from {
+                left: 0;
+                top: 0;
+            }
+            to {
+                left: -10000px;
+                top: -2000px;
+            }
+        }
+
+        @keyframes back-moving {
+            from {
+                left: 0;
+                top: 0;
+            }
+            to {
+                left: -10000px;
+                top: -2000px;
+            }
+        }
+
+        #background {
+            background: black url(img/background.png) repeat 5% 5%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+
+            -webkit-animation-name: back-moving;
+            -webkit-animation-duration: 280s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        #midground {
+            background: url(img/midground.png) repeat 20% 20%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 200;
+
+            -webkit-animation-name: back-moving;
+            -webkit-animation-duration: 210s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        #foreground {
+            background: url(img/foreground.png) repeat 35% 35%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 300;
+
+            -webkit-animation-name: back-moving;
+            -webkit-animation-duration: 140s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        #content {
+            z-index: 300;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="background"></div>
+<div id="midground"></div>
+<div id="foreground"></div>
+
+<div id="content">
+    <h1>
+        404
+    </h1>
+    <p>
+        This is not the page you are looking for. Move along.
+    </p>
+</div>
+
+</body>
+
+</html>

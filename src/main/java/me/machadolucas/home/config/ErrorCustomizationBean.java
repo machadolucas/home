@@ -12,5 +12,6 @@ public class ErrorCustomizationBean implements EmbeddedServletContainerCustomize
     public void customize(ConfigurableEmbeddedServletContainer container) {
         container.addErrorPages(new ErrorPage(HttpStatus.FORBIDDEN, "/403"));
         container.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/404"));
+        container.addErrorPages(new ErrorPage(HttpStatus.INTERNAL_SERVER_ERROR, "/500"));
     }
 }
