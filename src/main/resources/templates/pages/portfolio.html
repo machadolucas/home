@@ -3,163 +3,190 @@
 <head></head>
 <body>
 
-	<div class="content">
-		<div class="l-box-lrg">
-			<h1 class="content-head is-center" th:text="#{title_portfolio_and_projects}"></h1>
-			<p th:text="#{subtitle_portfolio_and_projects}"></p>
-		</div>
-	</div>
+<div class="content">
+    <div class="l-box-lrg">
+        <h1 class="content-head is-center" th:text="#{title_portfolio_and_projects}"></h1>
+        <p th:text="#{subtitle_portfolio_and_projects}"></p>
+    </div>
+</div>
 
-	<div class="ribbonLight l-box-lrg pure-g">
+<!--<div class="ribbonLight l-box-lrg pure-g">-->
 
-		<h2 class="content-head content-head-ribbon pure-u-1 is-center" th:text="#{title_academic_work}"></h2>
+    <!--<h2 class="content-head content-head-ribbon pure-u-1 is-center" th:text="#{title_academic_work}"></h2>-->
 
-	</div>
+    <!--<div class="pure-g portfolioItem">-->
+        <!--<div class="pure-u-1">-->
+            <!--<h3>-->
+                <!--<a href="/files/practical-evaluation-influence.pdf" target="_blank">A Practical Evaluation of-->
+                    <!--the Influence of Input Devices on Playability-->
+                <!--</a>-->
+            <!--</h3>-->
+            <!--<p>Published in the <a href="#">Volume 9733 of the Lecture Notes in Computer Science (LNCS - -->
+                <!--Springer).</a></p>-->
+            <!--<p>Presented at the 18th International Conference on Human-Computer Interaction (HCI International 2016) - -->
+                <!--Toronto, Canada.</p>-->
+            <!--<p><b>Abstract.</b> Innovations being achieved with interactive devices (screens, sensors etc.) allow the-->
+                <!--development of new forms of interaction for many applications. Videogames played with these devices are-->
+                <!--completely changing how we use them and taking advantage of intuitive interfaces. Based on that, we-->
+                <!--ask “What aspects of playability are affected using different input devices for a certain gaming task-->
+                <!--and how is gaming performance affected?”. Our contribution is to present a practical evaluation of four-->
+                <!--different input devices (Mouse, Gamepad, Kinect and Touchscreen) used to interact with the same game,-->
+                <!--Fruit Ninja, with our data analysis indicating that changing input device brings significant-->
+                <!--differences in certain aspects of player experience for this game, such as sensation, challenge and-->
+                <!--control, while for others there was very little difference since this particular game rarely provides-->
+                <!--intense experiences for those aspects.</p>-->
+            <!--<p><b>Keywords:</b> Emotions in HCI, Entertainment Systems, Evaluation methods and techniques, User-->
+                <!--experience, Input devices.</p>-->
+        <!--</div>-->
+    <!--</div>-->
 
-	<div class="ribbon l-box-lrg pure-g">
+<!--</div>-->
 
-		<h2 class="content-head content-head-ribbon pure-u-1 is-center" th:text="#{title_serious_business}"></h2>
+<div class="ribbon l-box-lrg pure-g">
 
-		<div class="pure-g portfolioItem">
-			<div class="pure-u-1 pure-u-md-1-3 pic">
-				<a href="http://bazaar.educloudalliance.org/" target="_blank"
-					th:title="#{tooltip_bazaar}"><img class="pure-img-responsive"
-					th:src="@{img/demos/bazaar.jpg}" /></a>
-			</div>
-			<div class="pure-u-1 pure-u-md-2-3">
-				<h3>
-					<a href="http://bazaar.educloudalliance.org/" target="_blank"
-						th:title="#{tooltip_bazaar}" th:text="#{title_bazaar}"></a>
-				</h3>
-				<p th:text="#{text_bazaar1}"></p>
-				<ul>
-					<li th:text="#{item_bazaar1}"></li>
-					<li th:text="#{item_bazaar2}"></li>
-					<li th:text="#{item_bazaar3}"></li>
-					<li th:text="#{item_bazaar4}"></li>
-				</ul>
-				<p th:text="#{text_bazaar2}"></p>
-			</div>
-		</div>
+    <h2 class="content-head content-head-ribbon pure-u-1 is-center" th:text="#{title_serious_business}"></h2>
 
-		<div class="pure-g portfolioItem">
-			<div class="pure-u-1 pure-u-md-1-3 pic">
-				<a href="https://itunes.apple.com/us/app/culturedude/id937261362"
-					target="_blank" th:title="#{tooltip_culturedude}"><img
-					class="pure-img-responsive"
-					th:src="@{img/demos/culturedude.jpg}" /></a>
-			</div>
-			<div class="pure-u-1 pure-u-md-2-3">
-				<h3>
-					<a href="https://itunes.apple.com/us/app/culturedude/id937261362"
-						target="_blank" th:title="#{tooltip_culturedude}" th:text="#{title_culturedude}"></a>
-				</h3>
-				<p th:text="#{subtitle_culturedude}"></p>
-			</div>
-		</div>
+    <div class="pure-g portfolioItem">
+        <div class="pure-u-1 pure-u-md-1-3 pic">
+            <a href="http://bazaar.educloudalliance.org/" target="_blank"
+               th:title="#{tooltip_bazaar}"><img class="pure-img-responsive"
+                                                 th:src="@{img/demos/bazaar.jpg}"/></a>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+            <h3>
+                <a href="http://bazaar.educloudalliance.org/" target="_blank"
+                   th:title="#{tooltip_bazaar}" th:text="#{title_bazaar}"></a>
+            </h3>
+            <p th:text="#{text_bazaar1}"></p>
+            <ul>
+                <li th:text="#{item_bazaar1}"></li>
+                <li th:text="#{item_bazaar2}"></li>
+                <li th:text="#{item_bazaar3}"></li>
+                <li th:text="#{item_bazaar4}"></li>
+            </ul>
+            <p th:text="#{text_bazaar2}"></p>
+        </div>
+    </div>
 
-		<h2 class="content-head content-head-ribbon pure-u-1 is-center" th:text="#{title_done_for_fun}"></h2>
+    <div class="pure-g portfolioItem">
+        <div class="pure-u-1 pure-u-md-1-3 pic">
+            <a href="https://itunes.apple.com/us/app/culturedude/id937261362"
+               target="_blank" th:title="#{tooltip_culturedude}"><img
+                    class="pure-img-responsive"
+                    th:src="@{img/demos/culturedude.jpg}"/></a>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+            <h3>
+                <a href="https://itunes.apple.com/us/app/culturedude/id937261362"
+                   target="_blank" th:title="#{tooltip_culturedude}" th:text="#{title_culturedude}"></a>
+            </h3>
+            <p th:text="#{subtitle_culturedude}"></p>
+        </div>
+    </div>
 
-		<div class="pure-g portfolioItem">
-			<div class="pure-u-1 pure-u-md-1-3 pic">
-				<a href="http://machadolucas.github.io/jslife/" target="_blank"
-					th:title="#{tooltip_js_life}"><img
-					class="pure-img-responsive"
-					th:src="@{img/demos/jslife.jpg}" /></a>
-			</div>
-			<div class="pure-u-1 pure-u-md-2-3">
-				<h3>
-					<a href="http://machadolucas.github.io/jslife/" target="_blank"
-						th:title="#{tooltip_js_life}" th:text="#{title_js_life}"></a>
-				</h3>
-				<p th:text="#{text_jslife}"></p>
-			</div>
-		</div>
+    <div class="pure-g portfolioItem">
+        <div class="pure-u-1 pure-u-md-1-3 pic">
+            <img class="pure-img-responsive" th:src="@{img/demos/diagnosys.jpg}"/>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+            <h3 th:text="#{title_diagnosys}">
+            </h3>
 
-		<div class="pure-g portfolioItem">
-			<div class="pure-u-1 pure-u-md-1-3 pic">
-				<a href="http://machadolucas.github.io/linescroller" target="_blank"
-					th:title="#{tooltip_line_scroller}"><img
-					class="pure-img-responsive"
-					th:src="@{img/demos/linescroller.jpg}" /></a>
-			</div>
-			<div class="pure-u-1 pure-u-md-2-3">
-				<h3>
-					<a href="http://machadolucas.github.io/linescroller"
-						target="_blank" th:title="#{tooltip_line_scroller}" th:text="#{title_line_scroller}"></a>
-				</h3>
-				<p th:text="#{text_line_scroller}"></p>
-			</div>
-		</div>
+            <p th:text="#{text_diagnosys}"></p>
+        </div>
+    </div>
+    <h2 class="content-head content-head-ribbon pure-u-1 is-center" th:text="#{title_done_for_fun}"></h2>
 
-		<div class="pure-g portfolioItem">
-			<div class="pure-u-1 pure-u-md-1-3 pic">
-				<a href="https://github.com/machadolucas/watchout" target="_blank"
-					th:title="#{tooltip_watch_out}"><img
-					class="pure-img-responsive" th:src="@{img/demos/watchout.jpg}" /></a>
-			</div>
-			<div class="pure-u-1 pure-u-md-2-3">
-				<h3>
-					<a href="https://github.com/machadolucas/watchout" target="_blank"
-						th:title="#{tooltip_watch_out}" th:text="#{title_watch_out}"></a>
-				</h3>
-				<p th:text="#{text_watch_out}"></p>
-			</div>
-		</div>
+    <div class="pure-g portfolioItem">
+        <div class="pure-u-1 pure-u-md-1-3 pic">
+            <a href="http://machadolucas.github.io/jslife/" target="_blank"
+               th:title="#{tooltip_js_life}"><img
+                    class="pure-img-responsive"
+                    th:src="@{img/demos/jslife.jpg}"/></a>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+            <h3>
+                <a href="http://machadolucas.github.io/jslife/" target="_blank"
+                   th:title="#{tooltip_js_life}" th:text="#{title_js_life}"></a>
+            </h3>
+            <p th:text="#{text_jslife}"></p>
+        </div>
+    </div>
 
-		<div class="pure-g portfolioItem">
-			<div class="pure-u-1 pure-u-md-1-3 pic">
-				<a href="https://github.com/machadolucas/questionnaire" target="_blank"
-				   th:title="#{tooltip_questionnaire}"><img
-						class="pure-img-responsive" th:src="@{img/demos/questionnaire.jpg}"/></a>
-			</div>
-			<div class="pure-u-1 pure-u-md-2-3">
-				<h3>
-					<a href="https://github.com/machadolucas/questionnaire" target="_blank"
-					   th:title="#{tooltip_questionnaire}" th:text="#{title_questionnaire}"></a>
-				</h3>
+    <div class="pure-g portfolioItem">
+        <div class="pure-u-1 pure-u-md-1-3 pic">
+            <a href="http://machadolucas.github.io/linescroller" target="_blank"
+               th:title="#{tooltip_line_scroller}"><img
+                    class="pure-img-responsive"
+                    th:src="@{img/demos/linescroller.jpg}"/></a>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+            <h3>
+                <a href="http://machadolucas.github.io/linescroller"
+                   target="_blank" th:title="#{tooltip_line_scroller}" th:text="#{title_line_scroller}"></a>
+            </h3>
+            <p th:text="#{text_line_scroller}"></p>
+        </div>
+    </div>
 
-				<p th:text="#{text_questionnaire}"></p>
-			</div>
-		</div>
+    <div class="pure-g portfolioItem">
+        <div class="pure-u-1 pure-u-md-1-3 pic">
+            <a href="https://github.com/machadolucas/watchout" target="_blank"
+               th:title="#{tooltip_watch_out}"><img
+                    class="pure-img-responsive" th:src="@{img/demos/watchout.jpg}"/></a>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+            <h3>
+                <a href="https://github.com/machadolucas/watchout" target="_blank"
+                   th:title="#{tooltip_watch_out}" th:text="#{title_watch_out}"></a>
+            </h3>
+            <p th:text="#{text_watch_out}"></p>
+        </div>
+    </div>
 
-		<div class="pure-g portfolioItem">
-			<div class="pure-u-1 pure-u-md-1-3 pic">
-				<a href="http://machadolucas.github.io/kmeans" target="_blank"
-				   th:title="#{tooltip_kmeans}"><img
-						class="pure-img-responsive" th:src="@{img/demos/kmeans.jpg}"/></a>
-			</div>
-			<div class="pure-u-1 pure-u-md-2-3">
-				<h3>
-					<a href="http://machadolucas.github.io/kmeans" target="_blank"
-					   th:title="#{tooltip_kmeans}" th:text="#{title_kmeans}"></a>
-				</h3>
+    <div class="pure-g portfolioItem">
+        <div class="pure-u-1 pure-u-md-1-3 pic">
+            <a href="https://github.com/machadolucas/questionnaire" target="_blank"
+               th:title="#{tooltip_questionnaire}"><img
+                    class="pure-img-responsive" th:src="@{img/demos/questionnaire.jpg}"/></a>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+            <h3>
+                <a href="https://github.com/machadolucas/questionnaire" target="_blank"
+                   th:title="#{tooltip_questionnaire}" th:text="#{title_questionnaire}"></a>
+            </h3>
 
-				<p th:text="#{text_kmeans}"></p>
-			</div>
-		</div>
+            <p th:text="#{text_questionnaire}"></p>
+        </div>
+    </div>
 
-		<div class="pure-g portfolioItem">
-			<div class="pure-u-1 pure-u-md-1-3 pic">
-				<img class="pure-img-responsive" th:src="@{img/demos/diagnosys.jpg}"/>
-			</div>
-			<div class="pure-u-1 pure-u-md-2-3">
-				<h3 th:text="#{title_diagnosys}">
-				</h3>
+    <div class="pure-g portfolioItem">
+        <div class="pure-u-1 pure-u-md-1-3 pic">
+            <a href="http://machadolucas.github.io/kmeans" target="_blank"
+               th:title="#{tooltip_kmeans}"><img
+                    class="pure-img-responsive" th:src="@{img/demos/kmeans.jpg}"/></a>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+            <h3>
+                <a href="http://machadolucas.github.io/kmeans" target="_blank"
+                   th:title="#{tooltip_kmeans}" th:text="#{title_kmeans}"></a>
+            </h3>
 
-				<p th:text="#{text_diagnosys}"></p>
-			</div>
-		</div>
+            <p th:text="#{text_kmeans}"></p>
 
-	</div>
+        </div>
 
-	<div class="content">
-		<div class="l-box-lrg">
-			<p th:text="#{text_still_adding}"></p>
-		</div>
-		<div class="l-box-lrg"></div>
-		<div class="l-box-lrg"></div>
-	</div>
+    </div>
+</div>
+
+
+<div class="content">
+    <div class="l-box-lrg">
+        <p th:text="#{text_still_adding}"></p>
+    </div>
+    <div class="l-box-lrg"></div>
+    <div class="l-box-lrg"></div>
+</div>
 
 </body>
 </html>
