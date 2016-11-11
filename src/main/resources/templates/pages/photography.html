@@ -14,6 +14,8 @@
 	<div class="ribbon ">
 		<div class="l-box-lrg">
 
+			<!--/*@thymesVar id="photosUrls" type="java.util.List<String>"*/-->
+			<!--/*@thymesVar id="photo" type="java.lang.String"*/-->
 			<ul class="rslides">
 				<li th:each="photo : ${photosUrls}">
 					<img th:src="${photo}"/>
