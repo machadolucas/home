@@ -277,3 +277,9 @@
 2016-11-19 12:24:30.736  INFO 36783 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@de7e193{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
 2016-11-19 12:24:30.741  INFO 36783 --- [main] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 8080 (http/1.1)
 2016-11-19 12:24:30.747  INFO 36783 --- [main] me.machadolucas.home.Application         : Started Application in 11.855 seconds (JVM running for 13.159)
+2016-11-19 12:35:26.783  INFO 36783 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@399f45b1: startup date [Sat Nov 19 12:24:21 BRST 2016]; root of context hierarchy
+2016-11-19 12:35:26.786  INFO 36783 --- [Thread-10] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2016-11-19 12:35:26.789  INFO 36783 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-11-19 12:35:26.797  INFO 36783 --- [Thread-10] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@de7e193{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2016-11-19 12:35:26.800  INFO 36783 --- [Thread-10] application                              : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2016-11-19 12:35:26.801  INFO 36783 --- [Thread-10] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@1d540566{/,file:///private/var/folders/l0/88q950xn1x535zw1xhq68bc80000gn/T/jetty-docbase.7444221979947795367.8080/,UNAVAILABLE}
