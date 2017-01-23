@@ -1,0 +1,49 @@
+buildscript {
+    ext {
+        springBootVersion = '1.4.3.RELEASE'
+    }
+    repositories {
+        maven { url = 'http://nexus.pagseguro.intranet/repository/public' }
+        //    maven { url "http://repo.maven.apache.org/maven2" }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+group = 'me.machadolucas'
+version = '2.1.0'
+
+description = "home"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+    maven { url = 'http://nexus.pagseguro.intranet/repository/public' }
+//    maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web') {
+        exclude(module: 'spring-boot-starter-tomcat')
+    }
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-jetty'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
+
+    compile group: 'org.webjars', name: 'jquery', version:'2.2.4'
+    compile group: 'org.webjars', name: 'font-awesome', version:'4.6.3'
+    compile group: 'org.webjars', name: 'pure', version:'0.6.0'
+
+    compile(group: 'org.projectlombok', name: 'lombok')
+}
