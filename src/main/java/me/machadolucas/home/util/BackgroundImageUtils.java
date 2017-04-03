@@ -1,9 +1,5 @@
 package me.machadolucas.home.util;
 
-import lombok.Getter;
-import lombok.extern.java.Log;
-import org.springframework.stereotype.Component;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,12 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
+import org.springframework.stereotype.Component;
+
+import lombok.Getter;
+import lombok.extern.java.Log;
+
 @Log
 @Component
 public class BackgroundImageUtils {
 
     @Getter
-    private List<String> photos = new ArrayList<String>();
+    private List<String> photos = new ArrayList<>();
 
     public String getRandomPhoto() {
         return photos.get(ThreadLocalRandom.current().nextInt(photos.size()));

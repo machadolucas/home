@@ -1,8 +1,9 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.1.RELEASE'
+        springBootVersion = '1.5.2.RELEASE'
     }
     repositories {
+//        maven { url = 'http://nexus.pagseguro.intranet/repository/public' }
         maven { url "http://repo.maven.apache.org/maven2" }
     }
     dependencies {
@@ -29,6 +30,7 @@ tasks.withType(JavaCompile) {
 
 
 repositories {
+//    maven { url = 'http://nexus.pagseguro.intranet/repository/public' }
     maven { url "http://repo.maven.apache.org/maven2" }
 }
 dependencies {
