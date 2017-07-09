@@ -1,9 +1,8 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.2.RELEASE'
+        springBootVersion = '1.5.4.RELEASE'
     }
     repositories {
-//        maven { url = 'http://nexus.pagseguro.intranet/repository/public' }
         maven { url "http://repo.maven.apache.org/maven2" }
     }
     dependencies {
@@ -16,7 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 group = 'me.machadolucas'
-version = '2.2.0'
+version = '2.2.2'
 
 description = "home"
 
@@ -30,7 +29,6 @@ tasks.withType(JavaCompile) {
 
 
 repositories {
-//    maven { url = 'http://nexus.pagseguro.intranet/repository/public' }
     maven { url "http://repo.maven.apache.org/maven2" }
 }
 dependencies {
@@ -39,10 +37,6 @@ dependencies {
     }
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-jetty'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'
-
-    compile group: 'org.webjars', name: 'jquery', version:'2.2.4'
-    compile group: 'org.webjars', name: 'font-awesome', version: '4.7.0'
-    compile group: 'org.webjars', name: 'pure', version: '0.6.1'
 
     compile(group: 'org.projectlombok', name: 'lombok')
 }
