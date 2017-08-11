@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.4.RELEASE'
+        springBootVersion = '1.5.6.RELEASE'
     }
     repositories {
         maven { url "http://repo.maven.apache.org/maven2" }
@@ -15,7 +15,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 group = 'me.machadolucas'
-version = '2.2.2'
+version = '2.2.3'
 
 description = "home"
 
